@@ -1,0 +1,15 @@
+{
+  "name": "truco",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "author": "Sirichai J.",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
