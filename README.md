@@ -1,11 +1,17 @@
 # Install
-  `$ git clone https://github.com/sirichaij/truco`
-  `$ cd ./truco`
-  `$ npm install`
+```bash
+$ git clone https://github.com/sirichaij/truco
+$ cd ./truco
+$ npm install
+```
 
 # Execution
 ## To run with AI Players
-  `$ npm start`
-  
+```bash
+$ npm start
+```
+
 ## To run unit test (using mocha)
-  `$ npm test`
+```bash
+$ npm test
+```
