@@ -9,5 +9,5 @@ Execution
 To run with AI Players
   - npm start
   
-To run unit test
+To run unit test (using mocha)
   - npm test
