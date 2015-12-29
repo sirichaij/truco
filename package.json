@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/test.js"
+    "test": "mocha test/test.js",
+    "start": "node app.js"
   },
   "author": "Sirichai J.",
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
-    "lodash": "^3.10.1"
+    "dateformat": "^1.0.12",
+    "lodash": "^3.10.1",
+    "memwatch-next": "^0.2.10",
+    "ordinal-number-suffix": "^0.1.1"
   }
 }

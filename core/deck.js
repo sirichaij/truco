@@ -1,27 +1,30 @@
-'use strict'
+'use strict';
 
 var _ = require('lodash');
 
-var deck = function (options) {
+var Deck = function (opt) {
+
+    if (!(this instanceof Deck))
+        return new Deck(opt);
+
+    opt = opt || {};
 
     var self = this;
 
-    self.cards = [];
-    self.cardType = options.cardType || new require('./card-spanish')();
+    var init = function () {
+        self.cardType = opt.cardType;
+        self.cards = opt.cardType.getDeck();
+    };
 
     self.shuffle = function () {
         self.cards = _.shuffle(self.cards);
     };
 
-    self.getCardName = function(card) {
+    self.getCardName = function (card) {
         return card.number.name + ' of ' + card.suit.name;
     };
 
-    var initCards = function () {
-        self.cards = self.cardType.getDeck();
-    };
-
-    initCards();
+    init();
 };
 
-module.exports = deck;
+module.exports = Deck;
